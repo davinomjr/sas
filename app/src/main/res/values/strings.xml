@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SAS</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_map">MapA</string>
+    <string name="title_activity_mapa_teste">MapaTeste</string>
+    <string name="title_activity_mapat">mapat</string>
+    <string name="title_activity_map_f">MapF</string>
+    <string name="title_activity_map_v">MapV</string>
+    <string name="abrir">MapF</string>
+    <string name="fechar">MapV</string>
+    <string name="action_websearch">MapV</string>
+    <string name="title_activity_config">Config</string>
+    <string name="title_activity_about">About</string>
+    <string name="version">1.0</string>
+    <string name="versionapp">Version: 1.0</string>
+    <string name="manifest">Essa é uma aplicação de utilidade pública.</string>
+    <string name="gmaps">Mapas carregados de ambiente público (maps.google.com) através da Google Maps API v2</string>
+    <string name="desenv">Desenvolvido por Caline Patriota e Davino Junior</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

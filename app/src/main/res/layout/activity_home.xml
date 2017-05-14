@@ -1,0 +1,151 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:app="http://schemas.android.com/apk/lib/com.app.chasebank"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:bootstrapbutton="xmlns:app=http://schemas.android.com/apk/lib/com.app.chasebank"
+        xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+        xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+        xmlns:bootstrapthumbnail="http://schemas.android.com/apk/res-auto"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Home"
+        android:id="@+id/l"
+        android:clickable="true"
+        android:background="@drawable/www">
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/linearLayout2"
+            android:layout_above="@+id/linearLayout3"
+            >
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:text="EMERGENCIA 24H"
+                android:onClick="mapaEMERGENCIA"
+                bootstrapbutton:bb_type="danger"
+                bootstrapbutton:bb_roundedCorners="true"
+                bootstrapbutton:bb_icon_left="fa-medkit"
+                android:background="#ffff7c2b"
+                android:textSize="16sp"
+                android:layout_weight="1" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                bootstrapbutton:bb_roundedCorners="true"
+                android:text="HOSPITAIS"
+                android:onClick="mapaHOSPITAIS"
+                android:textSize="16sp"
+                bootstrapbutton:bb_type="primary"
+                bootstrapbutton:bb_icon_left="fa-h-square"
+                android:background="#ffff7c2b"
+
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/linearLayout3"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="133dp">
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                bootstrapbutton:bb_roundedCorners="true"
+                android:textSize="16sp"
+                android:text="UPA"
+                android:onClick="mapaUPA"
+                bootstrapbutton:bb_type="success"
+                bootstrapbutton:bb_icon_left="fa-plus-square"
+                android:background="#ffff7c2b"
+                android:layout_weight="1" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:textSize="16dp"
+                android:layout_margin="10dp"
+                bootstrapbutton:bb_roundedCorners="true"
+                android:text="BUSCAR OUTROS"
+                android:onClick="buscar"
+                bootstrapbutton:bb_type="warning"
+                bootstrapbutton:bb_icon_left="fa-ambulance"
+                android:background="#ffff7c2b"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout">
+
+            <ImageView
+                android:src="@drawable/po"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:clickable="true"
+                android:onClick="ligarpolicia"
+                android:layout_weight="1"
+                android:id="@+id/imageView" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/samu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="ligarsamu"
+            android:id="@+id/imageView2"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:src="@drawable/bomb"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/imageView3"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:onClick="ligarbombeiro"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+    <ListView android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:background="#FFF"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"/>
+</android.support.v4.widget.DrawerLayout>
